@@ -1,0 +1,11 @@
+n1 = input("Digite o seu nome:")
+n2 = input("Digite a sua idade:")
+n3 = input("Digite o seu email:")
+n4 = input("Digite a sua data de nascimento:")
+n5 = input("Digite o seu número de telefone:")
+
+print("O nome digitado foi:", n1)
+print("O idade digitada foi:", n2)
+print("O email digitado foi:", n3)
+print("A data de nascimento digitada foi:", n4)
+print("O número digitada foi:", n5)

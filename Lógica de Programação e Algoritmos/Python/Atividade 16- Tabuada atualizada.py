@@ -1,0 +1,15 @@
+n1 = int(input('Digite o número que você deseja descobrir a tabuada: '))
+n2 = int(input('Digite por qual número você deseja começar: '))
+n3 = int(input('Digite em qual número deseja parar: '))
+
+for i in range (n2, n3):
+    print("1 x ", n1, " = ", (1 * n1))
+    print("2 x ", n1, " = ", (2 * n1))
+    print("3 x ", n1, " = ", (3 * n1))
+    print("4 x ", n1, " = ", (4 * n1))
+    print("5 x ", n1, " = ", (5 * n1))
+    print("6 x ", n1, " = ", (6 * n1))
+    print("7 x ", n1, " = ", (7 * n1))
+    print("8 x ", n1, " = ", (8 * n1))
+    print("9 x ", n1, " = ", (9 * n1))
+    print("10 x ", n1, " = ", (10 * n1))

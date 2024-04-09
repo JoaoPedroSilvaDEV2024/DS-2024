@@ -1,0 +1,12 @@
+n1=  float(input("Digite um número para a tabuada:"))
+
+print("1 x ", n1, " = ", (1*n1))
+print("2 x ", n1, " = ", (2*n1))
+print("3 x ", n1, " = ", (3*n1))
+print("4 x ", n1, " = ", (4*n1))
+print("5 x ", n1, " = ", (5*n1))
+print("6 x ", n1, " = ", (6*n1))
+print("7 x ", n1, " = ", (7*n1))
+print("8 x ", n1, " = ", (8*n1))
+print("9 x ", n1, " = ", (9*n1))
+print("10 x ", n1, " = ", (10*n1))
