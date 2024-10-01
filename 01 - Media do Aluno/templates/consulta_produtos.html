@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Produtos</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Calculadora de Média do Aluno</a> | 
+        <a href="/consulta">Consulta de Média do Aluno</a>
+    </nav>
+    
+    <div class="consulta_produtos">
+        <h2>Consulta de Média do Aluno</h2>
+        <table class="consulta_produtos_tabela">
+            <thead>
+                <tr>
+                    <th>Primeira Nota</th>
+                    <th>Segunda Nota</th>
+                    <th>Terceira Nota</th>
+                    <th>Média</th>
+                    <th>Status</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for produto in produtos %}
+                <tr>
+                    <td>{{ produto.nota1 }}</td>
+                    <td>{{ produto.nota2 }}</td>
+                    <td>{{ produto.nota3 }}</td>
+                    <td>{{ produto.media }}</td>
+                    <td>{{ produto.status }}</td>
+                    <td><a href="/excluir_produto?linha={{ produto.linha }}" class="link_produto">Deletar Produto</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

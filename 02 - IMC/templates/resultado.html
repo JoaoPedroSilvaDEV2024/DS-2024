@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="/static/styles/resultado.css">
+    <meta charset="UTF-8">
+    <title>Resultado do IMC</title>
+</head>
+<body>
+    <h1>Resultado do IMC</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>IMC</td>
+                <td>{{ imc }}</td>
+            </tr>
+            <tr>
+                <td>Categoria</td>
+                <td>{{ categoria }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="{{ url_for('index') }}">Voltar</a>
+</body>
+</html>
